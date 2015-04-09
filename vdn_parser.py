@@ -14,10 +14,15 @@ sys.setdefaultencoding('utf8')
 
 specialchar_dic={
 	"’": "'",
+	"„": "\"",
+	"“": "\"",
+	"”": "\"",
 	"«": "<<",
 	"»": ">>",
 	"…": "...",
-	"–": "-"
+	"–": "-",
+	"¡": "!",
+	"¿": "?"
 }
 
 specialchar_re = re.compile('(%s)' % '|'.join(specialchar_dic.keys()))
