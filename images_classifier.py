@@ -8,7 +8,7 @@ from collections import Counter, OrderedDict
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-mypath = 'J:/Semester 3/Internship Work/Data/IRHIS_BaseImages'
+mypath = '.'
 
 onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f)) and f.endswith('.yml')]
 
