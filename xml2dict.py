@@ -16,6 +16,7 @@ class XmlListConfig(list):
 
 
 class XmlDictConfig(dict):
+
     def __init__(self, parent_element):
         if parent_element.items():
             self.update(dict(parent_element.items()))
