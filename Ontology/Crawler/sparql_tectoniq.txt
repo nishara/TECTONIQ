@@ -1,0 +1,41 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#>
+
+SELECT ?image ?description
+	WHERE { ?image onto:hasDescription?description }
+
+SELECT ?subject ?year
+	WHERE { ?subject onto:belongsToPeriod ?object.
+                ?object onto:hasYear ?year       }	
+	
+
+SELECT ?subject ?b
+	WHERE { ?subject onto:isFromSource ?object.
+                ?object onto:hasBook ?b}	
+	
+	
+SELECT DISTINCT ?subject ?period ?epoch ?year
+	WHERE { 
+         ?subject onto:belongsToPeriod ?period.
+                {?period onto:hasEpoch ?epoch} UNION {?period onto:hasYear ?year}  
+}	
+
+SELECT DISTINCT ?subject ?description
+	WHERE { ?subject onto:hasKeyword ?object.
+                ?subject onto:hasDescription ?description  }
+				
+SELECT ?subject ?description
+	WHERE {?subject onto:hasKeyword  ?object.
+        ?subject onto:hasDescription ?description. 
+        ?object onto:hasKey ?x.
+        FILTER(REGEX(STR(?x),"usine")) .	
+	}				
+
+
+Chose to use Sesame. primarily because it has an excellent administration interface
+included in the distribution, because it's easy to install, and because of its strong
+performance.	
+	

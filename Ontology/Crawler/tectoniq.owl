@@ -1,0 +1,921 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#"
+     xml:base="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq">
+        <rdfs:comment>Description can be a Concept where Description has Keyword relationship occurs</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#belongsToDate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#belongsToDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#belongsToPeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#belongsToEpoch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#belongsToEpoch">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#belongsToPeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#belongsToPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#belongsToPeriod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#belongsToYear -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#belongsToYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#belongsToPeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#dateInYear -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#dateInYear"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#describesCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#describesCity">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#describesCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#describesCountry">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#describesDepartment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#describesDepartment">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#describesLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#describesLocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#describesProvince -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#describesProvince">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#describesRegion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#describesRegion">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#describesStreet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#describesStreet">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasCity">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasConstructionTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasConstructionTime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasKeyword -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasKeyword"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasReferenceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasReferenceOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasRelatedPerson -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasRelatedPerson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasSurveyDate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasSurveyDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#imageDescribesLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#imageDescribesLocation">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#invIsAddedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#invIsAddedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Inventory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#invIsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#invIsIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Inventory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#invPropertyType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#invPropertyType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Inventory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#isFromBook -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#isFromBook"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#locatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#yearInEpoch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#yearInEpoch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#buildingFloors -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#buildingFloors">
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#date">
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#denomination -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#denomination">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#elevation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#elevation">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#firstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#firstName">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasCity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasCity">
+        <rdfs:range rdf:resource="&xsd;Name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasDepartment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasDepartment">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasDescription">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasEpoch -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasEpoch">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasKey -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasKey">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasLocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasPhotoCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasPhotoCode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasProvince -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasProvince">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasRegion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasRegion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasTitle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#hasYear">
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#imageFormat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#imageFormat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Image"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#inCountry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#inCountry">
+        <rdfs:range rdf:resource="&xsd;Name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#institutionName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#institutionName">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#invEdifice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#invEdifice">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#lastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#lastName">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#link -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#link">
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#propertyCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#propertyCondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Inventory"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#propertyType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#propertyType">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#region -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#region">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#street -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#street">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#subtitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#subtitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#vdnTitle"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#vdnLanguage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#vdnLanguage">
+        <rdfs:range rdf:resource="&xsd;language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#vdnTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#vdnTitle">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Administrator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Administrator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Article -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Article">
+        <rdfs:comment>This Article is any kind of information source or document. VDN goes here.
+
+Article is refered by a Link.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Author">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Bleaching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Bleaching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Book">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Inventory"/>
+        <rdfs:comment>Building/Part of the bulding has been used for a textile Process.
+
+Building/Part of the bulding is constructed with Material.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#BuildingMaterial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#BuildingMaterial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#CopyWriter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#CopyWriter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Author"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Date">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Period"/>
+        <rdfs:comment>There are these 3 types of dates for inventories(Do not know the importance) :
+
+date Enquete
+date Versement
+date Mise A Jour</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Depository -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Depository">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Document">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Drying -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Drying">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Dyeing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Dyeing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Epoch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Epoch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Period"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#FloorMaterial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#FloorMaterial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#BuildingMaterial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Good">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Inventory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Image -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Image">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Document"/>
+        <rdfs:comment>Images provided by IRHiS</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Institution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Institution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Inventory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Inventory">
+        <rdfs:comment>Inventory can be of type either Building or any other Good.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Keyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Keyword"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Link -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Link">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Map -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Map">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Document"/>
+        <rdfs:comment>If there is any</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Material">
+        <rdfs:comment>This is any type of material used for fabrics, buildings etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#News -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#News">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Article"/>
+        <rdfs:comment>VDN</rdfs:comment>
+        <rdfs:comment>La Voix Du Nord news articles</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Other -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Other">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Period -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Period">
+        <rdfs:comment>This describes the period of any any entity.
+
+example: An inventory is constructed in a period
+or
+An Image describes something related to some period</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Printing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Printing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#PropertyType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Process">
+        <rdfs:comment>Textile Processes.
+
+May be this can be defined without subclasses.
+
+Process is carried out in a Building.
+Process is carried out in a Location.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#PropertyType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#PropertyType">
+        <rdfs:label>Property Type</rdfs:label>
+        <rdfs:comment>Inventory has a PropertyType of Public or Private</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Province -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Province">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#PropertyType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#RoofMaterial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#RoofMaterial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#BuildingMaterial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#RoomMaterial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#RoomMaterial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#BuildingMaterial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Source -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Source"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Spinning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Spinning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Street -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Street">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#TextileMaterial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#TextileMaterial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#WallMaterial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#WallMaterial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#BuildingMaterial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Weaving -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Weaving">
+        <rdfs:label>Weaving</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Process"/>
+        <rdfs:comment>Knitting is equivalent to Weaving</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Year">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Period"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Administrator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Article"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Author"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Bleaching"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Book"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Building"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#City"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#CopyWriter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Date"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Department"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Document"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Drying"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Dyeing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Epoch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#FloorMaterial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Good"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Image"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Institution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Inventory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Keyword"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Link"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Map"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Material"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#News"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Period"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Printing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Private"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Process"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#PropertyType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Province"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Public"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Region"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#RoofMaterial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#RoomMaterial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Source"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Spinning"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Street"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#WallMaterial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Weaving"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nishara/ontologies/2015/4/tectoniq#Year"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

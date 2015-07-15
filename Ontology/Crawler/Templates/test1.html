@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tectoniq</title>
+    <style>
+        legend {
+        display: block;
+        padding-left: 2px;
+        padding-right: 2px;
+        border: none;
+        }
+        thead {color:green;}
+        tbody {color:blue;}
+        tfoot {color:red;}
+
+        table, td {
+        border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+<p>Tectoniq</p>
+<table>
+    <thead>
+    <tr>
+        <th style="width:50%">TECTONIQ</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <form action="/" method="post" name="search">
+                <fieldset>
+                    <legend><h2>Filtering</h2></legend>
+                    Keyword: <input type="text" size="30" name="keyword"><br>
+                    <p></p>
+                    Location: <input type="text" size="30" name="location"><br>
+                    <p><input type="submit" value="submit"></p>
+                </fieldset>
+            </form>
+        </td>
+        <td>
+            <fieldset>
+                    <legend><h2>Results</h2></legend>
+            </fieldset>
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+</body>
+</html>
