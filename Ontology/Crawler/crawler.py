@@ -19,6 +19,8 @@ class InstanceGenerator():
     #     self.populatedOutput = populatedOutput
 
     def generate(self):
+
+        #Sample data population from an xml file
         directory = 'J:/Semester 3/Internship Work/Data/IRHIS_BaseImages'
         filename = 'VdBmonMorts13-02_caption.xml'
 
