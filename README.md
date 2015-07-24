@@ -14,7 +14,6 @@ All the data given in all the xml files were passed to store in one collection i
 
 doc_id: {descriptors} --> This follows the metadata model described in the metadatamodel.png
 
-
 Solution 2
 ==========
 
